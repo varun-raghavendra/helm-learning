@@ -3,7 +3,7 @@ entries:
   lichen-algae:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-06T11:09:03.9768161+05:30"
+    created: "2021-06-06T16:09:17.4345358+05:30"
     description: A Helm chart for Kubernetes
     digest: 2c14acd77d84904e92f5679bbeb7f3cb901c291dc822b18643f0f54ac60b23f8
     name: lichen-algae
@@ -11,10 +11,21 @@ entries:
     urls:
     - https://varun-raghavendra.github.io/helm-learning/lichen-algae-0.1.0.tgz
     version: 0.1.0
+  my-project:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-06-06T16:09:17.4345358+05:30"
+    description: A Helm chart for Kubernetes
+    digest: aa18784f92868d613a668ce67920aa160fc5206abc1a28d670d40592a6fef1fa
+    name: my-project
+    type: application
+    urls:
+    - https://varun-raghavendra.github.io/helm-learning/my-project-0.1.0.tgz
+    version: 0.1.0
   proper-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-06T11:09:03.9779722+05:30"
+    created: "2021-06-06T16:09:17.4345358+05:30"
     description: A Helm chart for Kubernetes
     digest: efebfb636ec2e7c483ac293f8bcac287c766184d610ea320c62061a326f91b93
     name: proper-chart
@@ -22,4 +33,4 @@ entries:
     urls:
     - https://varun-raghavendra.github.io/helm-learning/proper-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-06T11:09:03.9756345+05:30"
+generated: "2021-06-06T16:09:17.4345358+05:30"
