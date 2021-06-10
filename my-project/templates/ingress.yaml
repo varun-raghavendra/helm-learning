@@ -25,7 +25,7 @@ spec:
             serviceName: djangoapp-internal-service
             servicePort: 8000
 
-  - host: mongo-express.ingress.better-proj.first-proj.shoot.canary.k8s-hana.ondemand.com
+  - host: mongo-express.{{ .Values.ingress }}
     http:
       paths:
         - backend:
