@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongodb-deployment
-  namespace: combined
+  name: {{ .Values.Deployment.mongo.name }}
+  namespace: {{ .Values.namespace }}
   labels: 
     app: mongodb
 spec:
-  replicas: 1
+  replicas: 20
   selector:
     matchLabels:
       app: mongodb

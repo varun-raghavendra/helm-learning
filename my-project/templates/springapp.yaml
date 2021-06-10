@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: springapp-deployment
-  namespace: combined
+  namespace: {{ .Values.namespace }}
   labels: 
     app: springapp
 spec:

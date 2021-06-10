@@ -2,21 +2,23 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: springapp-ingress
-  namespace: combined
+  namespace: {{ .Values.namespace }}
 spec:
   # tls:
   # - hosts:
   #   - ecom.ingress.first.first-proj.shoot.canary.k8s-hana.ondemand.com
   #   secretName: ecom-secret-tls
   rules:
-  - host: java-app.ingress.better-proj.first-proj.shoot.canary.k8s-hana.ondemand.com
+  # - host: java-app.ingress.better-proj.first-proj.shoot.canary.k8s-hana.ondemand.com
+  - host: java-app.{{ .Values.ingress }}
     http:
       paths:
         - backend:
             serviceName: springapp-internal-service
             servicePort: 8080
   
-  - host: ecom.ingress.better-proj.first-proj.shoot.canary.k8s-hana.ondemand.com
+  # - host: ecom.ingress.better-proj.first-proj.shoot.canary.k8s-hana.ondemand.com
+  - host: ecom.{{ .Values.ingress }}
     http:
       paths:
         - backend:
